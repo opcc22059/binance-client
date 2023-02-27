@@ -16,7 +16,7 @@ if __name__ == "__main__":
     api_key = keys['api_key']
    
     client = Spot(
-        base_url='https://testnet.binance.vision',
+        # base_url='https://testnet.binance.vision',
         api_key=api_key, 
         api_secret=secret_key
     )
