@@ -22,4 +22,8 @@ if __name__ == "__main__":
     )
     print(client.time())
 
-    print(client.account())
+    response = client.account()
+    balances = response['balances']
+    for asset in balances:
+        if asset['asset'] == 'USDT':
+            print(asset)
