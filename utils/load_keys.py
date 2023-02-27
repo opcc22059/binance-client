@@ -1,4 +1,4 @@
-from json_loader import JsonLoader
+from utils.json_loader import JsonLoader
 
 keys = JsonLoader().getConst(
     ['.secret/'],
