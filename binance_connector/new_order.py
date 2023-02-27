@@ -1,4 +1,13 @@
-from load_keys import keys
+import sys
+from pathlib import Path
+
+base_path = str(Path(__file__).resolve().parent.parent)
+print('current path: ', base_path)
+
+sys.path.append(base_path)
+print('path: ', sys.path)
+
+from utils.load_keys import keys
 from binance.spot import Spot
 
 if __name__ == "__main__":
