@@ -6,7 +6,7 @@ if __name__ == "__main__":
     secret_key = keys['secret_key']
     api_key = keys['api_key']
 
-    client = Spot()
+    client = Spot(base_url='https://testnet.binance.vision')
     print(client.time())
 
     client = Spot(api_key=api_key, api_secret=secret_key)
