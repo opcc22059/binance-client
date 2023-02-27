@@ -3,13 +3,13 @@ from binance.spot import Spot
 
 if __name__ == "__main__":
 
-    secret_keys = keys['secret_key']
+    secret_key = keys['secret_key']
     api_key = keys['api_key']
 
     client = Spot()
     print(client.time())
 
-    client = Spot(key=api_key, secret=secret_keys)
+    client = Spot(api_key=api_key, api_secret=secret_key)
 
     print(client.account())
 
