@@ -32,6 +32,6 @@ if __name__ == "__main__":
         'price': 350
     }
 
-    response = client.new_order_test(**params)
+    response = client.new_order(**params)
 
     print(response)
