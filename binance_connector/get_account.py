@@ -22,16 +22,4 @@ if __name__ == "__main__":
     )
     print(client.time())
 
-    # Post a new order
-    params = {
-        'symbol': 'BNBUSDT',
-        'side': 'SELL',
-        'type': 'LIMIT',
-        'timeInForce': 'GTC',
-        'quantity': 0.1,
-        'price': 350
-    }
-
-    response = client.new_order_test(**params)
-
-    print(response)
+    print(client.account())
